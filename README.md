@@ -42,7 +42,12 @@ class Solution:
         left = self.sortedArrayToBST(nums[:m])          # 递归：把中心点左边的数组切片拿去构建左半边的树
         right = self.sortedArrayToBST(nums[m + 1:])     # 递归：把中心点右边的数组切片拿去构建右半边的树
         return TreeNode(nums[m], left, right)           # 将正中间的数字作为根，拼上造好的左右子树，并向上返回
+
 ```
+
+5 // 2 = 2：关注的是分出去了多少
+
+5 % 2 = 1：关注的是剩下了多少
 
 ---
 
